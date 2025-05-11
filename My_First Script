@@ -1,0 +1,35 @@
+local Window = Library.CreateLib("Neckhurt Hub", "DarkTheme")
+
+local Tab = Window:NewTab("Scripts")
+local Section = Tab:NewSection("Popular Games")
+
+Section:NewLabel("Dead Rails")
+
+Section:NewButton("This has no name lol", "OP, can auto pick-up, and tp to Lab, Sterling, etc.", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/DeadRailsAuto"))()
+end)
+
+Section:NewButton("Skull hub", " MOST OP, has autobonds farm and more, but has key.", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/hungquan99/SkullHub/main/loader.lua'))()
+end)
+
+Section:NewButton("Weld Anywhere", "Weld Things Anywhere", function()
+--// Better Weld v1.0 - Made By Beru
+_G.key = "Z" --// Change key if u have some issue
+_G.MobileButton = true --// Activate/Desactivate Mobile Button
+
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Beru1337/DeadRails/refs/heads/main/betterweld.lua"))()
+end)
+
+Section:NewLabel("Grow A Garden")
+
+Section:NewButton("Kosowa", "MOST OP, Grow a garden script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kosowa/asd/refs/heads/main/GaG.lua"))()
+end)
+
+Section:NewButton("No name", "Grow a garden script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/GrowaGarden"))()
+--inf seeds it patched!!
+end)
+
+local Section = Tab:NewSection("Local Player")
